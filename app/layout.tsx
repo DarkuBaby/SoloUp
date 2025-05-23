@@ -13,10 +13,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Solo Level Up - Self-Improvement App</title>
+        <title>Solo Up - An advance App</title>
         <meta
           name="description"
-          content="A self-improvement app inspired by Solo Leveling"
+          content="Solo Up App inspired by Solo Leveling"
         />
       </head>
       <body className="bg-[#0a0e14]">

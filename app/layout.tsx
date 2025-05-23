@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { UserProvider } from "@/context/user-context";
 import { MobileNav } from "@/components/mobile-nav";
 import { LevelUpNotification } from "@/components/level-up-notification";
+import UpdateNotification from "@/components/update-notification"; // <-- Add this
 
 export default function RootLayout({
   children,
@@ -30,13 +31,10 @@ export default function RootLayout({
             {children}
             <MobileNav />
             <LevelUpNotification />
+            <UpdateNotification /> {/* <-- Add the popup here */}
           </UserProvider>
         </ThemeProvider>
       </body>
     </html>
   );
 }
-
-export const metadata = {
-  generator: "v0.dev",
-};
